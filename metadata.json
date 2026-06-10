@@ -1,0 +1,6 @@
+{
+  "name": "PULIH360",
+  "description": "Sistem Pengurusan dan Analitik Pemulihan Khas PULIH360 moden yang berintegrasi dengan Google Sheets dan visualisasi data real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

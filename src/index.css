@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* 
+  ELEGANT THEME ADAPTERS FOR CLEAN MINIMALISM PRESET
+  Since some deep interactive sheets/modals/tables use tailwind dark utilities,
+  the following CSS adapter rules target those elements and map them cleanly to
+  soft off-whites, neutral deep charcoals, and premium indigo highlights.
+*/
+
+/* Card and container mapping */
+.bg-slate-950 {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+}
+
+.bg-slate-900 {
+  background-color: #f8fafc !important;
+  color: #334155 !important;
+}
+
+/* Modals or inner dropdown elements can use soft shadow and border */
+.bg-slate-950, .bg-slate-900 {
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Border color mapping */
+.border-slate-800, .border-slate-700 {
+  border-color: #f1f5f9 !important;
+}
+
+/* Text color helper rules */
+.text-slate-100, .text-slate-200, .text-white:not(button *, .bg-indigo-600 *, .bg-blue-600 *, .bg-emerald-600 *, .bg-amber-600 *, .inline-flex *) {
+  color: #0f172a !important;
+}
+
+.text-slate-400, .text-slate-500 {
+  color: #627284 !important;
+}
+
+/* Inputs and interactive states in sheets and modals */
+input, select, textarea {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border-width: 1px !important;
+  border-color: #e2e8f0 !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #4f46e5 !important;
+  outline: 2px solid transparent !important;
+}
+
+/* Select option background styling */
+option {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+}
+
+/* Table rows styling */
+tr.hover\:bg-slate-900\/60:hover {
+  background-color: #f8fafc !important;
+}
+
+/* Sidebar adapter rules to keep background white and clean */
+aside {
+  background-color: #ffffff !important;
+  border-right: 1px solid #e2e8f0 !important;
+}
+
+aside .text-slate-400 {
+  color: #94a3b8 !important;
+}
